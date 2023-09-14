@@ -28,11 +28,7 @@ long long MaxPairWiseProductFast(const vector<int>& numbers)
 
     for (int i = 0; i < n; ++i)
     {
-        // cout << "Condition" << (max_index1 != -1) << "i" << i << endl;
-        // cout << "Condition " << (numbers[i]) <<  " " << numbers[max_index1] << " i " << i << endl;
-
         if((max_index1 == -1) || (numbers[i] > numbers[max_index1]))
-            // cout << "mad" << endl;
             max_index1 = i;
     }
 
@@ -41,7 +37,7 @@ long long MaxPairWiseProductFast(const vector<int>& numbers)
 
     for (int j = 0; j < n; ++j)
     {
-        if((numbers[j] !=numbers[max_index1]) && ((max_index2 == -1) || (numbers[j] > numbers[max_index2])))
+        if((j != max_index1) && ((max_index2 == -1) || (numbers[j] > numbers[max_index2])))
             max_index2 = j;
     }
 
