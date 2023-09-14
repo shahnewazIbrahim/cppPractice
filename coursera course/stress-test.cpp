@@ -41,22 +41,22 @@ long long MaxPairWiseProductFast(const vector<int>& numbers)
             max_index2 = j;
     }
 
-    cout << max_index1 << " " << max_index2 << endl;
+    // cout << max_index1 << " " << max_index2 << endl;
 
     return ((long long) (numbers[max_index1] * numbers[max_index2]));
 }
 
 int main()
 {
-    while (true)
+    /* while (true)
     {
-        int n = rand() % 4 + 2;
+        int n = rand() % 1000 + 2;
         cout << n << "\n";
         vector<int> a;
 
         for (int i = 0; i < n; ++i)
         {
-            a.push_back(rand() % 10);
+            a.push_back(rand() % 100000);
         }
         for (int i = 0; i < n; ++i)
         {
@@ -75,7 +75,7 @@ int main()
             cout << "ok\n";
         }
         
-    }
+    } */
     
     int n;
     cin >> n;
