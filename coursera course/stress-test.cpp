@@ -75,19 +75,19 @@ int main()
         
     }
     
-    // int n;
-    // cin >> n;
-    // vector<int> numbers(n);
+    int n;
+    cin >> n;
+    vector<int> numbers(n);
 
-    // for (int i = 0; i < n; ++i)
-    // {
-    //     cin >> numbers[i];
-    // }
+    for (int i = 0; i < n; ++i)
+    {
+        cin >> numbers[i];
+    }
 
-    // // long long result = MaxPairWiseProduct(vector<int>(100000, 0));
-    // long long result = MaxPairWiseProductFast(numbers);
+    // long long result = MaxPairWiseProduct(vector<int>(100000, 0));
+    long long result = MaxPairWiseProductFast(numbers);
 
-    // cout << result << "\n";
+    cout << result << "\n";
     return 0;
 }
 
