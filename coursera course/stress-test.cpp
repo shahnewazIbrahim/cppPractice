@@ -44,7 +44,9 @@ long long MaxPairWiseProductFast(const vector<int>& numbers)
     // cout << max_index1 << " " << max_index2 << endl;
 
     // return ((long long) (numbers[max_index1] * numbers[max_index2]));
-    return static_cast<long long>(numbers[max_index1]) * numbers[max_index2];
+    // return static_cast<long long>(numbers[max_index1]) * numbers[max_index2];
+    long long testNumber = numbers[max_index1];
+    return testNumber * numbers[max_index2];
 }
 
 int main()
